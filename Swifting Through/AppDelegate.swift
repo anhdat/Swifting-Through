@@ -14,7 +14,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        // Insert code here to initialize your application
+        // Emoji as value
+        var subject = "🐱"
+        if (subject == "🐶") {
+            println("woof woof")
+        } else {
+            println("meow")
+        }
+        
+        // Emoji as class name
+        var cat = 🐱() // <- from a class in 🐱.swift
+        println(cat.speak())
     }
 
     func applicationWillTerminate(aNotification: NSNotification?) {
